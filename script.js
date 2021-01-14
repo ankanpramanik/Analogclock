@@ -73,12 +73,12 @@ function showPosition(position) {
     var kph1 = parseFloat(`${data['wind']['speed'] * 3600 / 1000}`);
     var kph2 = kph1.toFixed(3);
     var mphval1 = kph2*0.621371;
-    var mphval2 = mphval1.toFixed(2);
+    var mphval2 = mphval1.toFixed(3);
 
     var feelF = feellikeC * 1.8 +32;
     var feellikeF = feelF.toFixed(2);
     var tempFa = tempC * 1.8 + 32;
-    var tempF = tempFa.toFixed(3)
+    var tempF = tempFa.toFixed(2)
 
     var showfahrenheit = true;
 
